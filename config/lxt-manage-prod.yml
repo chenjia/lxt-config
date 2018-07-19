@@ -1,15 +1,11 @@
 eureka:
   client:
-    registryFetchIntervalSeconds: 300
     serviceUrl:
-      defaultZone: http://localhost:8100/lxt-eureka/eureka/,http://localhost:8200/lxt-eureka/eureka/
+      defaultZone:  http://localhost:8080/eureka/
 file:
-  uploadPath: /home/chenjia/uploadFiles
-log:
-  path: /home/chenjia/logs
-  level: debug
+  uploadPath: D:/test
 mapper:
-  mappers: com.lxt.chenjia.manage.mapper
+  mappers:  com.lxt.chenjia.manage.mapper
   not-empty: false
   identity: MYSQL
 mybatis:
@@ -20,17 +16,15 @@ pagehelper:
     reasonable: true
     supportMethodsArguments: true
     params: count=countSql
-    returnPageInfo: check
-safeApi: /api/user/captcha,/api/user/login,/api/user/test
-safeDomain: http://localhost:8888,http://localhost:8080,http://47.100.119.102:8888,http://47.100.119.102:8080
+    returnPageInfo: check      
+safeApi: /api/user/captcha,/api/user/login
+safeDomain: http://localhost:8888,http://localhost:8080
 security:
   oauth2:
     resource:
       filter-order: 3
 server:
-  port: 8400
-  servlet:
-    contextPath: /lxt-manage
+  port: 8080
 spring:
   application:
     name: lxt-manage
@@ -61,7 +55,7 @@ spring:
       additional-paths: src/main/java
   redis:
     database: 0
-    host: localhost
+    host: 127.0.0.1
     port: 6379
     password:
     timeout: 0
