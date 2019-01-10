@@ -4,7 +4,7 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8101/lxt-eureka/eureka/
 file:
-  uploadPath: ~/uploadFiles/prod
+  uploadPath: ~/uploadFiles/dev
 log:
   path: ~/logs
   level: error
