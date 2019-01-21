@@ -4,7 +4,7 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8101/lxt-eureka/eureka/
 file:
-  uploadPath: ~/uploadFiles/chenjiaconfig
+  uploadPath: ~/uploadFiles/chenjiaconfig22
 log:
   path: ~/logs
   level: error
